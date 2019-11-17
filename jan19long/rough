@@ -1,0 +1,9 @@
+(((N mod i) mod j) mod k) = N - 1
+
+(((N mod i) mod j) = k - 1
+
+((N mod i)) = j - 1
+
+j - 1 = k - 1
+j = k = N
+

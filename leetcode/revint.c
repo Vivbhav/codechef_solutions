@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main() {
+	int num;
+	scanf("%d",&num);
+	long int rev = 0;
+	int sign = 0, mod;
+	if(num < 0) 
+		sign = 1;
+	while(num != 0) {
+		mod = num % 10;
+		if (sign == 1)
+			mod *= -1;
+		num /= 10;
+		//if (sign == 0) 
+			rev = rev * 10 + mod;
+		//else 
+		//	rev = rev * 10 + (10 - mod);
+		printf("mod %d, num %d, rev %ld\n",mod, num, rev);
+	}
+	if (sign == 1)
+		rev *= -1;
+	printf("%ld\n",rev);
+}
